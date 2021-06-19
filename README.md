@@ -58,7 +58,7 @@ $ git clone git@github.com:sangeethaNR/My_Portfolio.git
 
  You installed the project to your local!!!
  
-  Link to the deployed application  https://sangeethanr.github.io/My-Portfolio.git
+  Link to the deployed application https://github.com/sangeethaNR/My-Portfolio.git
   
   Landing Page  https://sangeethanr.github.io/My-Portfolio/
   Screenschot of how the landing page look like
