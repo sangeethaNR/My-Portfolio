@@ -57,6 +57,12 @@ $ git clone git@github.com:sangeethaNR/My_Portfolio.git
 > Unpacking objects: 100% (10/10), done.
 
  You installed the project to your local!!!
+ 
+  Link to the deployed application  https://sangeethanr.github.io/My-Portfolio.git
+  
+  Landing Page  https://sangeethanr.github.io/My-Portfolio/
+  Screenschot of how the landing page look like
+![landing Page image](assets/images/WebpageOverview.png)
   
   ## Credits
   github.com
