@@ -1,0 +1,30 @@
+body {
+	background-color: rgb(78, 55, 13);
+}
+
+.btnClass {
+	padding: 10px;
+	margin-right: 65px;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+img {
+	border-radius: 16px;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	margin: 50px;
+}
+
+.cat_image {
+	text-align: center;
+	margin: 50px 70px 0px 0px;
+}
+
+main div:last-child {
+	text-align: center;
+	margin-top: 20px
+}

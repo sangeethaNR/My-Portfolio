@@ -1,0 +1,217 @@
+:root {
+	--header_color: #2a607c;
+	--header_text_color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.625rem;
+	font-size: larger;
+	font-weight: 700;
+	line-height: 1.1;
+	word-wrap: break-word;
+}
+p{
+	Font-family: Arial, Helvetica, Helvetica, sans-serif;
+}
+
+/* making all the image to have pointer as cursor*/
+
+div>img {
+	cursor: pointer;
+}
+
+
+/* Styling the header */
+
+.header {
+	padding: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: var(--header_color);
+	color: var(--header_text_color);
+	font-size: 30px;
+}
+
+
+/* Creating logo on the header */
+
+.avatar_class {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.header h1 {
+	display: inline-block;
+}
+
+.header nav {
+	padding-top: 15px;
+	margin-right: 20px;
+	float: right;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+}
+
+.header nav ul {
+	list-style-type: none;
+}
+
+.header nav ul li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.header a {
+	color: #350b0b;
+	text-decoration: none;
+	font-size: large;
+}
+
+.image_class img {
+	width: 100%;
+	height: 200px;
+}
+
+main {
+	width: 96%;
+	margin: 2rem auto;
+}
+
+
+/* Set the portfolio layout as flex */
+
+.row {
+	display: flex;
+	flex: 100%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+}
+
+.card_column {
+	margin: 10px;
+}
+
+.code_card {
+	flex: 1 0 0;
+	display: flex;
+}
+
+.card_header {
+	margin: 80px;
+}
+
+.vertical_line1 {
+	border-left: 10px solid red;
+}
+
+.card_body {
+	margin: 20px;
+}
+
+.vertical_line2 {
+	border-left: 10px solid red;
+	margin: 6px;
+}
+
+
+/* Display projects as flex in work section  */
+
+.row_div {
+	display: flex;
+	overflow: auto;
+	flex: 1 0 50%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	margin: 49px;
+}
+
+
+/* the div only inside .row_div styles will be applied */
+
+.row_div+div {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 50px 50px;
+}
+
+.row_div>div :not( .row_div + div) {
+	height: auto;
+	padding: 0px;
+	margin: 50px 50px;
+}
+
+.column_class {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 50%;
+	flex-wrap: wrap;
+}
+
+.column_class>img:hover {
+	opacity: 1;
+	box-shadow: inset 10px 10px 8px #dd7031, -10px -10px 15px #dd7031;
+}
+
+.row_div img {
+	outline: 5px solid rgb(90, 218, 122);
+	opacity: 0.7;
+}
+
+.image_class2,
+.image_class3 {
+	width: 350px;
+	height: 350px;
+}
+
+.vertical_line3 {
+	border-left: 10px solid red;
+	margin-left: -17px;
+}
+
+.contact_div li {
+	margin-left: 70px;
+	padding: 25px;
+}
+
+.contact_div nav ul li {
+	display: inline-block;
+}
+
+
+/* Footer Section */
+
+footer {
+	margin: 20px;
+	text-align: center;
+	padding: 10px;
+	font-size: large;
+}
+
+
+/* breakpoints when the screem hits 768px and 992px  */
+
+@media screen and (max-width: 768px) {
+	.column_class img:first-child,
+	.column_class img:last-child {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.column_class img:first-child,
+	.column_class img:last-child {
+		width: 350px;
+	}
+}
