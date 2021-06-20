@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(78, 55, 13);
+	background-color: rgb(140, 120, 84);
 }
 
 .btnClass {
@@ -11,6 +11,7 @@ body {
 
 img {
 	border-radius: 16px;
+	border: 8px groove darkcyan;
 }
 
 h1 {

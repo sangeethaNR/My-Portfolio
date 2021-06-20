@@ -1,24 +1,28 @@
 :root {
 	--header_color: #2a607c;
 	--header_text_color: #ffffff;
+	--body_color: #F6F6E8
+}
+
+body {
+	background-color: var(--body_color);
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
 	margin-bottom: 0.625rem;
 	font-size: larger;
 	font-weight: 700;
 	line-height: 1.1;
 	word-wrap: break-word;
 }
-p{
+
+p {
 	Font-family: Arial, Helvetica, Helvetica, sans-serif;
 	font-size: medium;
 }
+
 
 /* making all the image to have pointer as cursor*/
 
@@ -69,7 +73,7 @@ div>img {
 }
 
 .header a {
-	color: #350b0b;
+	color: #eab338;
 	text-decoration: none;
 	font-size: large;
 }
@@ -166,8 +170,21 @@ main {
 }
 
 .row_div img {
-	outline: 5px solid rgb(90, 218, 122);
 	opacity: 0.7;
+	/* Full width border and a clip-path visually cutting it down to the starting size */
+	/* credits from https://css-tricks.com/animating-border/ */
+	border: 8px groove darkcyan;
+	clip-path: polygon( calc(0% + 5px) calc(0% + 5px), /* top left */
+	calc(100% - 5px) calc(0% + 5px), /* top right */
+	calc(100% - 5px) calc(100% - 5px), /* bottom right */
+	calc(0% + 5px) calc(100% - 5px)/* bottom left */
+	);
+	transition: clip-path 0.6s linear;
+}
+
+.row_div img:hover {
+	/* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .image_class2,
@@ -201,7 +218,7 @@ footer {
 }
 
 
-/* breakpoints when the screem hits 768px and 992px  */
+/* breakpoints when the screem hits 768px and 992px  and 480px */
 
 @media screen and (max-width: 768px) {
 	.column_class img:first-child,
@@ -214,5 +231,30 @@ footer {
 	.column_class img:first-child,
 	.column_class img:last-child {
 		width: 350px;
+	}
+	p {
+		font-size: 20px;
+	}
+	body {
+		width: 150vh;
+	}
+	.header a {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.column_class img:first-child,
+	.column_class img:last-child {
+		width: 350px;
+	}
+	p {
+		font-size: 20px;
+	}
+	body {
+		width: 117vh;
+	}
+	.header a {
+		font-size: 20px;
 	}
 }

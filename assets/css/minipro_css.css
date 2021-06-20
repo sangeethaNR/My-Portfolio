@@ -4,10 +4,13 @@ body {
 }
 
 h1 {
-	color: rgb(185, 209, 77);
+	color: rgb(186, 224, 14);
 	margin: 56px;
 }
 
 div {
 	text-align: center;
 }
+ img{
+	 outline: 8px groove darkcyan;
+ }
