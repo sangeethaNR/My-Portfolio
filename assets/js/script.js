@@ -18,11 +18,7 @@ $('#quiz_id').on('click', function () {
 });
 
 
-$('#petfinder_github').on('click', function () {
-    $('#quiz_modal').modal('show');
 
-
-});
 
 
 
