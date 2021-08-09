@@ -87,6 +87,10 @@ main {
 	width: 96%;
 	margin: 2rem auto;
 }
+.project_img{
+
+	width: 700px;
+}
 
 
 /* Set the portfolio layout as flex */
@@ -98,6 +102,7 @@ main {
 	flex-direction: row;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
+
 }
 
 .card_column {
@@ -131,7 +136,7 @@ main {
 
 .row_div {
 	display: flex;
-	overflow: auto;
+	overflow:visible;
 	flex: 1 0 50%;
 	flex-wrap: wrap;
 	justify-content: flex-start;
