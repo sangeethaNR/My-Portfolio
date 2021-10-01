@@ -16,7 +16,12 @@ $('#quiz_id').on('click', function () {
 
 
 });
+local4u2u_modal
+$('#local4u2u_id').on('click', function () {
+    $('#local4u2u_modal').modal('show');
 
+
+});
 
 
 
