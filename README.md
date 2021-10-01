@@ -62,7 +62,7 @@ $ git clone git@github.com:sangeethaNR/My_Portfolio.git
   
   Landing Page  https://sangeethanr.github.io/My-Portfolio/
   Screenschot of how the landing page look like
-![landing Page image](assets/images/landingPage.png)
+![landing Page image](assets/images/landingScreenshot.png)
   
   ## Credits
   github.com
