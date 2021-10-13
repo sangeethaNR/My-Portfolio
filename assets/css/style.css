@@ -205,7 +205,7 @@ main {
 
 .contact_div li {
 	margin-left: 70px;
-	padding: 25px;
+	padding: 20px;
 }
 
 .contact_div nav ul li {
@@ -224,14 +224,12 @@ footer {
 
 
 /* breakpoints when the screem hits 768px and 992px  and 480px */
-
-@media screen and (max-width: 768px) {
-	.column_class img:first-child,
-	.column_class img:last-child {
-		width: 200px;
+@media screen and (max-width: 1024px) {
+	body{
+		width :121vw;
 	}
-}
 
+}
 @media screen and (max-width: 992px) {
 	.column_class img:first-child,
 	.column_class img:last-child {
@@ -247,6 +245,25 @@ footer {
 		font-size: 20px;
 	}
 }
+@media screen and (max-width: 768px) {
+	.column_class img:first-child,
+	.column_class img:last-child {
+		width: 200px;
+	}
+	.header
+	.card_body p{
+		width: 86%;
+		font-size: 17px;
+	}
+	.row_div>div :not( .row_div + div) {
+		height: auto;
+		padding: 0px;
+		margin: 52px -1px;
+	}
+
+}
+
+
 
 @media screen and (max-width: 480px) {
 	.column_class img:first-child,
@@ -256,10 +273,29 @@ footer {
 	p {
 		font-size: 20px;
 	}
-	body {
-		width: 117vh;
+	
+	.header,body{
+		width :154vw;
 	}
+
 	.header a {
 		font-size: 20px;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.header,body{
+		width :173vw;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.header,body{
+		width :193vw;
+	}
+	
+
+}
+
+
