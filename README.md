@@ -1,6 +1,6 @@
 # My-Portfolio
 
-This page is a portfolio of an employee
+This page is a my portfolio
 
 ## Description
 The wesite has 4 main components
